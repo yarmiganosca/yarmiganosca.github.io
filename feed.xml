@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://blog.url.com/2015/06/09/tell-don-t-ask-vs-state-machines/"/>
     <id>http://blog.url.com/2015/06/09/tell-don-t-ask-vs-state-machines/</id>
     <published>2015-06-08T21:59:00-04:00</published>
-    <updated>2015-06-08T23:49:36-04:00</updated>
+    <updated>2015-06-08T23:53:50-04:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -44,6 +44,8 @@
   &lt;li&gt;Questions &lt;strong&gt;may not&lt;/strong&gt; be posed to objects inside business logic.&lt;/li&gt;
   &lt;li&gt;Questions &lt;strong&gt;may&lt;/strong&gt; be posed to objects at the boundaries of our application.&lt;/li&gt;
 &lt;/ol&gt;
+
+&lt;p&gt;These are really just simple, punchy distillations of the above discussion. For every place where we would have had a decision in our code, we need to drag that decision (kicking and screaming) all the way to a system boundary (in fact, there's actually the possibility for some really interesting observations of boundaries involving where decisions stop being made; another time maybe).&lt;/p&gt;
 
 </content>
   </entry>
