@@ -14,15 +14,15 @@
     <link rel="alternate" href="http://blog.url.com/2015/06/09/tell-don-t-ask-vs-state-machines/"/>
     <id>http://blog.url.com/2015/06/09/tell-don-t-ask-vs-state-machines/</id>
     <published>2015-06-08T21:59:00-04:00</published>
-    <updated>2015-06-08T22:43:20-04:00</updated>
+    <updated>2015-06-08T22:50:59-04:00</updated>
     <author>
       <name>Article Author</name>
     </author>
     <content type="html">&lt;h1 id="tell-dont-ask-vs-state-machines"&gt;Tell Don't Ask vs. State Machines&lt;/h1&gt;
 
-&lt;h2 id="sandi-metz-owes-me-several-hours-of-sleep"&gt;Sandi Metz owes me several hours of sleep&lt;/h2&gt;
+&lt;h2 id="sandi-metz-railsconf-2015-nothing-is-something"&gt;Sandi Metz' RailsConf 2015 "Nothing is Something"&lt;/h2&gt;
 
-&lt;p&gt;About two nights after I came back from RailsConf 2015 in Atlanta&lt;/p&gt;
+&lt;p&gt;About two nights after I came back from RailsConf 2015 in Atlanta, I got up at least 8 times and scribbled out around 10 pages of notes on removing conditionals from Rails codebases (read: my company's codebases). This sleeplessness and these notes were directly inspired by Sandi Metz's fantastic talk &lt;a href="https://www.youtube.com/watch?v=OMPfEXIlTVE"&gt;Nothing is Something&lt;/a&gt;. And I'd like the missed sleep back.&lt;/p&gt;
 </content>
   </entry>
 </feed>
