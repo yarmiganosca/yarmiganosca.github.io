@@ -18,7 +18,7 @@
 
 <p>You should probably watch the talk as the rationale for this post and the post itself will probably make more sense with that context.</p>
 
-<p>And I am aware that Sandi Metz didn't invent "Tell Don't Ask" and there have been many talks on it in the past (Jim Gay, a good friend of mine, gave <a href="https://www.youtube.com/watch?v=kXcrClJcfm8">this talk on East-Oriented Programming</a> at RubyConf 2014). However, for some reason(s) most likely having to do with certain thoughts about design and architecture being more prominent in my head at the time than at other times in the past, Metz's talk was the one that really flipped something in my head and led to sleeplessness.</p>
+<p>And I am aware that Sandi Metz didn't invent "Tell Don't Ask" and there have been many talks on it in the past (Jim Gay, a good friend of mine, gave <a href="https://www.youtube.com/watch?v=kXcrClJcfm8">this talk on East-Oriented Programming</a> at RubyConf 2014). However, for some reason(s) most likely having to do with certain thoughts about design and architecture being more prominent in my head at the time than at other times in the past, Metz's talk was the one that really flipped something in my head and led to sleeplessness (sorry, Jim).</p>
 
 <h2 id="tell-dont-ask-and-some-implications">Tell Don't Ask (and some implications)</h2>
 
@@ -40,6 +40,10 @@
 </ol>
 
 <p>These are really just simple, punchy distillations of the above discussion. For every place where we would have had a decision in our code, we need to drag that decision (kicking and screaming) all the way to a system boundary (there's actually the possibility for some really interesting observations of boundaries involving where decisions stop being made; another time maybe).</p>
+
+<p>So what is counts as a system boundary for the Rules? Two obvious ones are datastores and the network. I also like to think of application boot as a boundary (I don't have a really good reason for it, it just seems right); feel free to ask questions of the environment when setting up things like loggers (I'm thinking stuff like <code>ENV.key?(blah)</code> here). There are other subtle ones, but I'm not going to go over them because (1) it's good fun to work them out on your own, and (2) I'm about to cheat so hard it doesn't matter that I've left some out. Ready for the cheating? Ok.</p>
+
+<p>You can define your own boundaries.</p>
 
 
     </div>
