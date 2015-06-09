@@ -14,11 +14,15 @@
     <link rel="alternate" href="http://blog.url.com/2015/06/09/tell-don-t-ask-vs-state-machines/"/>
     <id>http://blog.url.com/2015/06/09/tell-don-t-ask-vs-state-machines/</id>
     <published>2015-06-08T21:59:00-04:00</published>
-    <updated>2015-06-08T21:59:10-04:00</updated>
+    <updated>2015-06-08T22:43:20-04:00</updated>
     <author>
       <name>Article Author</name>
     </author>
-    <content type="html">
+    <content type="html">&lt;h1 id="tell-dont-ask-vs-state-machines"&gt;Tell Don't Ask vs. State Machines&lt;/h1&gt;
+
+&lt;h2 id="sandi-metz-owes-me-several-hours-of-sleep"&gt;Sandi Metz owes me several hours of sleep&lt;/h2&gt;
+
+&lt;p&gt;About two nights after I came back from RailsConf 2015 in Atlanta&lt;/p&gt;
 </content>
   </entry>
 </feed>
