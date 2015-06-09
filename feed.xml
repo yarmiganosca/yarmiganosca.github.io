@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://blog.url.com/2015/06/09/tell-don-t-ask-vs-state-machines/"/>
     <id>http://blog.url.com/2015/06/09/tell-don-t-ask-vs-state-machines/</id>
     <published>2015-06-08T21:59:00-04:00</published>
-    <updated>2015-06-08T23:40:59-04:00</updated>
+    <updated>2015-06-08T23:43:52-04:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -41,8 +41,8 @@
 &lt;h2 id="our-rules"&gt;Our Rules&lt;/h2&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;Questions &lt;em&gt;may not&lt;/em&gt; be posed to objects inside business logic.&lt;/li&gt;
-  &lt;li&gt;Questions &lt;em&gt;may&lt;/em&gt; be posed to objects at the boundaries of our application.&lt;/li&gt;
+  &lt;li&gt;Questions &lt;strong&gt;may not&lt;/strong&gt; be posed to objects inside business logic.&lt;/li&gt;
+  &lt;li&gt;Questions &lt;strong&gt;may&lt;/strong&gt; be posed to objects at the boundaries of our application.&lt;/li&gt;
 &lt;/ol&gt;
 
 </content>
