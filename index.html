@@ -18,11 +18,11 @@
        the first 250 characters -->
   <h1 id="tell-dont-ask-vs-state-machines">Tell Don't Ask vs. State Machines</h1>
 
-<h2 id="sandi-metzs-railsconf-2015-nothing-is-something">Sandi Metz's RailsConf 2015 "Nothing is Something"</h2>
-
 <p>About two nights after I came back from RailsConf 2015 in Atlanta, I got up at least 8 times and scribbled out around 10 pages of notes on removing conditionals from Rails codebases (read: my company's codebases). This sleeplessness and these notes were a side-effect of exposure to Sandi Metz's fantastic talk <a href="https://www.youtube.com/watch?v=OMPfEXIlTVE">Nothing is Something</a>. I'd like the missed sleep back.</p>
 
 <p>You should probably watch the talk as the rationale for this post and the post itself will probably make more sense with that context.</p>
+
+<p>And I am aware that Sandi Metz didn't invent "Tell Don't Ask" and there have been many talks on it in the past (Jim Gay, a good friend of mine, gave <a href="https://www.youtube.com/watch?v=kXcrClJcfm8">this talk on East-Oriented Programming</a> at RubyConf 2014). However, for some reason(s) having to do with certain thoughts being more prominent in my head at the time, Metz's talk was the one that really flipped something in my head and led to sleeplessness.</p>
 
 <h2 id="tell-dont-ask-and-some-implications">Tell Don't Ask (and some implications)</h2>
 
@@ -36,7 +36,7 @@
 
 <p>And now we come to our Rules:</p>
 
-<h2 id="our-rules">Our Rules</h2>
+<h2 id="the-rules">The Rules</h2>
 
 <ol>
   <li>Questions <strong>may not</strong> be posed to objects inside business logic.</li>
