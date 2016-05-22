@@ -8,8 +8,12 @@
 footer { border-top: 4px black solid; }
 footer div { float: left; }
 
-footer .tags { width: calc(30%); }
 footer .recent-articles { width: calc(40%); }
+
+footer .tags {
+    width: calc(30%);
+    text-align: center;
+}
 
 footer .years {
     width: calc(30%);
@@ -17,6 +21,7 @@ footer .years {
 }
 
 footer h2 { text-align: center; }
+footer .tags ol { padding-left: 0; }
 footer .years ol { padding-left: 0; }
 
 footer li { list-style-type: none; }
