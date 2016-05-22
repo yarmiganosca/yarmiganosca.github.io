@@ -3,5 +3,4 @@
 [horizontal]
 `middleman server`:: run the server
 `middleman article "Article Name"`:: new article
-`rake build`:: generate static site
-`rake publish BRANCH_NAME=master`:: publish blog
+`middleman deploy`:: publish blog
