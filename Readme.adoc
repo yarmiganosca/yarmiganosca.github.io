@@ -1,5 +1,6 @@
 == Common Commands
-`middleman server`
-`middleman article "Article Name"`
-`rake build`   # builds for gh-pages
-`rake publich` # publishes gh-pages
+
+* `middleman server`
+* `middleman article "Article Name"`
+* `rake build`   # builds for gh-pages
+* `rake publich` # publishes gh-pages
