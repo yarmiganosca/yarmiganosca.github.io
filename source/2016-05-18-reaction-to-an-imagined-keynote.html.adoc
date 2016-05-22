@@ -1,7 +1,6 @@
 ---
 title: Reaction to An Imagined Keynote
 date: 2016-05-18 20:57 UTC
-published: false
 tags: rails
 ---
 

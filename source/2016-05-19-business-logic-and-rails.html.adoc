@@ -1,6 +1,7 @@
 ---
 title: Business Logic and Rails
 date: 2016-05-19 20:31 UTC
+published: false
 tags:
 ---
 
