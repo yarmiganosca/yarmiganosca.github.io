@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://blog.url.com/2016/05/18/reaction-to-an-imagined-keynote/"/>
     <id>http://blog.url.com/2016/05/18/reaction-to-an-imagined-keynote/</id>
     <published>2016-05-18T16:57:00-04:00</published>
-    <updated>2016-05-22T02:03:09-04:00</updated>
+    <updated>2016-05-22T02:04:07-04:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -104,7 +104,7 @@
 &lt;p&gt;You know enough about databases to write database integrity constraints yourself.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;You don&amp;#8217;t ever get enough load to discover your persistence layer doesn&amp;#8217;t have your back.&lt;/p&gt;
+&lt;p&gt;You won&amp;#8217;t ever get enough load to discover your persistence layer doesn&amp;#8217;t have your back.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;/div&gt;
