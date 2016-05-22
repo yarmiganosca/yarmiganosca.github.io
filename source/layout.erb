@@ -9,34 +9,48 @@
     <script src="//use.typekit.net/ckw5eed.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
     <%= stylesheet_link_tag('highlighting') %>
+    <%= stylesheet_link_tag('code') %>
+    <%= stylesheet_link_tag('layout') %>
   </head>
   <body>
     
     <div id="main" role="main">
       <%= yield %>
     </div>
-    
-    <aside>
-      <h2>Recent Articles</h2>
-      <ol>
-        <% blog.articles[0...10].each do |article| %>
-          <li><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></li>
-        <% end %>
-      </ol>
 
-      <h2>Tags</h2>
-      <ol>
-        <% blog.tags.each do |tag, articles| %>
+    <footer>
+      <div class="contact-info">
+        <h2>Me</h2>
+        <ul>
+          <li class="contact-info-twitter"><a href="https://twitter.com/yarmiganosca">
+        </ul>
+      </div>
+      <div class="tags">
+        <h2>Tags</h2>
+        <ol>
+          <% blog.tags.each do |tag, articles| %>
           <li><%= link_to "#{tag} (#{articles.size})", tag_path(tag) %></li>
-        <% end %>
-      </ol>
+          <% end %>
+        </ol>
+      </div>
 
-      <h2>By Year</h2>
-      <ol>
-        <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
+      <div class="recent-articles">
+        <h2>Recent Articles</h2>
+        <ol>
+          <% blog.articles[0...10].each do |article| %>
+          <li><span class="date"><%= article.date.strftime('%b %e')%></span> <%= link_to article.title, article %></li>
+          <% end %>
+        </ol>
+      </div>
+
+      <div class="years">
+        <h2>By Year</h2>
+        <ol>
+          <% blog.articles.group_by {|a| a.date.year }.each do |year, articles| %>
           <li><%= link_to "#{year} (#{articles.size})", blog_year_path(year) %></li>
-        <% end %>
-      </ol>
+          <% end %>
+        </ol>
+      </div>
     </aside>
   </body>
 </html>

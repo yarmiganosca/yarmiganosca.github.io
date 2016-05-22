@@ -38,6 +38,8 @@ set :markdown, fenced_code_blocks: true, smartypants: true
 
 activate :rouge_syntax
 
+set :asciidoc_attributes, %w(source-highlighter=coderay coderay-css=style)
+
 ###
 # Compass
 ###

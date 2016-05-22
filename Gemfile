@@ -8,6 +8,8 @@ gem 'middleman-deploy', '~> 1.0'
 
 gem 'middleman-livereload'
 
+gem 'asciidoctor', '~> 1.5.2'
+
 gem 'middleman-syntax'
 gem 'middleman-rouge'
 gem 'redcarpet'

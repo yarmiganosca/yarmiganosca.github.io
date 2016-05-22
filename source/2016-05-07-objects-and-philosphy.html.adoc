@@ -1,0 +1,17 @@
+---
+title: Objects and Philosophy
+date: 2016-05-07 01:03 UTC
+published: false
+tags:
+---
+
+There are two layers in a program: How and What. Functionality & Structure. Mechanics & Meaning. All programming abstractions exist in the 2nd layer. These abstractions are efforts to extract meaning from the undifferentiated How 
+
+Functionality precedes Structure. It exists without Structure. 
+
+It's intertesting with objects we're to ask "what does it do?" in place of "what is it?", but I _need_ to place the doing in buckets of being. I need the islands of coallesced potential to steady me while I consider all the ways I could structure all the things that could possibly be out of this code.
+
+Naming isn't naming - it's metaphor generation. I used to say 'metaphor selection' when I made that point, but it's worse and harder than that - you're not restricted to a finite known list. You get to invent anew, and when you invent a thing, you create a new world - a world you maybe can't yet conceive of. And we invent when we "name"; we don't just naively group operations into buckets. We make new buckets. We change the little world we're gods of. How does this new grouping change it's neighbors? their neighbors? Does it create a need for new groupings? for new functionality? Is there functionaity you don't need anymore? Bell invented the telephone and thought people would let each other know about telegrams with it. Turns out, once you have a phone, you don't need the telegrams. What existing objects does this new name of yours obsolete?
+
+
+

@@ -1,0 +1,15 @@
+---
+title: Business Logic and Rails
+date: 2016-05-19 20:31 UTC
+tags:
+---
+
+Now, the thing I have the most opinions about: Copeland's proposal for the structuring of Business Logic. I will say right away I think `ActiveService` would be a good addition to Rails. MVC as a pattern (server-side MVC; client-side MVC is older and different) was never intended to structure Business Logic. The authors of the 2002 pattern https://pyha.ru/forum/attachment/4429/[concluded by saying]
+[quote]
+____
+We have not devoted a great deal of discussion to the business logic layer, because we consider it to be a normal OO program.
+____
+It's always been a failing of Rails that the framework hasn't provided a good place to put Business Logic. It's always been a worse failing that it hasn't recognized this. Models aren't the right place. And this isn't about fidelity to the original pattern. I don't care whether Rails uses MVC or doesn't; but the pattern has a specific technical situation it's designed to be applied in. It has a specific set of strengths and weaknesses; it has a specific set of things it does help with and things it doesn't help with. It doesn't help with Business Logic. Rails believing it does has always been the framework's deepest flaw.
+
+Back to the present, I wouldn't use `ActiveService::Base` use to structure my Business Logic. Object domain models are best left organic and lumpy, clumping and grouping as they and the designer see fit. Having a overarching design plan in mind before you start modelling (and these services are a prefab design plan) just means you'll have to rip it out once you find something that _does_ fit. The fact that we're not mixing persistence logic in doesn't change that. But, if `ActiveService` were to be included in Rails, I would be ecstatic, if only because it would allow us to have a concrete _thing_ around which to have badly needed OO design discussions as teams and as a community.
+
