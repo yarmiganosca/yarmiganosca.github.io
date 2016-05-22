@@ -7,13 +7,13 @@ tags: rails
 
 = Reaction to "An Imagined Keynote"
 
-On Tuesday, David Copeland posted http://naildrivin5.com/blog/2016/05/17/announcing-rails-6-an-imagined-roadmap.html[a script (with code samples)] for a fictional future RailsConf Keynote reveal of Rails 6's "new features". Copeland suggests that between a perceived lack of Rails 5 hype (my word, not his) at this year's RailsConf, and Justin Searls http://blog.testdouble.com/posts/2016-05-09-make-ruby-great-again.html[worrying over Indeed.com job trends] (it's towards the very end), Rails might need bold new features to win back mindshare. (A note on Searls' talk before we continue: out of context, one line chart proves the existence of line charts. I'd like to see a more thorough analysis, including Rails' adoption & use data across both enterprise and startup sectors, before deciding the sky was failling.)
+On Tuesday, David Copeland posted http://naildrivin5.com/blog/2016/05/17/announcing-rails-6-an-imagined-roadmap.html[a script (with code samples)] for a fictional future RailsConf Keynote reveal of Rails 6's "new features". (If you haven't yet, please read it; I'm going to referencing without quoting extensively.) Copeland suggests that between a perceived lack of Rails 5 talk content at this year's RailsConf, and Justin Searls http://blog.testdouble.com/posts/2016-05-09-make-ruby-great-again.html[worrying over Indeed.com job trends] (it's towards the very end), Rails might need bold new features to win back mindshare. (A note on Searls' talk before we continue: out of context, one line chart proves the existence of line charts. I'd like to see a more thorough analysis, including Rails' adoption & use data across both enterprise and startup sectors, before deciding the sky was failling.)
 
 Whatever I think of his motives, Copeland proposed these features, and I think they're great. I want almost all _now_.
 
 == Front-End 2.0
 
-I don't do any front-end work (that isn't dataviz) these days, so I have no opinions on these proposals. I'd love to hear what designers & front-end developers think. I will mention -- this has nothing to do with Copeland -- the name 'OOCSS' bothers me. I'll let Sam Phippen say why, because I wouldn't do better:
+I don't do any front-end work (that isn't dataviz) these days, so I have no opinions on Copeland's proposals here. I'd love to hear what designers & front-end developers think. I will mention -- this has nothing to do with Copeland -- the name 'OOCSS' bothers me. I'll let Sam Phippen say why, because I wouldn't do better:
 
 ++++
 <blockquote class="twitter-tweet" data-conversation="none" data-lang="en"><p lang="en" dir="ltr">This all is to say: OO is about message passing. CSS doesn’t have messages, so I’ve always struggled to see how CSS can be OO.</p>&mdash; The Moment Seizes (@samphippen) <a href="https://twitter.com/samphippen/status/731964847991205888">May 15, 2016</a></blockquote>
@@ -22,11 +22,11 @@ I don't do any front-end work (that isn't dataviz) these days, so I have no opin
 
 == Making the RESTful 7 Special
 
-Copeland's suggestion that defining `UsersController#index` should make it a route (without needing any `config/routes.rb` declarations) is compelling. I'd worry about losing the "glanceability" of `config/routes.rb`, but all of us working on monoliths lost that long ago. The idea of adding more invisible magic to Rails concerns me, but I'm very excited for "doing the right thing" to be 'free'.
+Copeland's suggestion that defining `UsersController#index` should make it a route (without needing any `config/routes.rb` declarations) is compelling. The idea of adding more invisible magic to Rails concerns me, but I'm very excited for it to be effortless to do "the right thing". I do worry about losing the "glanceability" of the routes file, but all of us working on monoliths lost that long ago.
 
 == ActionResource
 
-This would be *so* useful. Facades (or Presenters or Decorators) absolutely have a place in the modern web application, but the best solution I've found is using `SimpleDelegator` for single objects and `Forwardable` for composite facades. This is workable but not ideal. `ActiveResource`, however, I like a lot. I like that aside from the proposed DSL, you just write Ruby (which has always been Rails' greatest strength - when it gets out of the way and lets you). The `from`/`format` DSL is clear (the highest praise you can offer a DSL) and effort-saving (the second highest). I would start using it today if I could. (I might try to implement it.)
+This would be *so* useful. Facades (or Presenters or Decorators) absolutely have a place in the modern web application, but the best solution I've found is using `SimpleDelegator` for single objects and `Forwardable` for composite facades. This is workable but not _good_. `ActiveResource` is. I like that aside from the proposed `from`/`format` DSL, you just write Ruby (which has always been Rails' greatest strength - when it gets out of the way and lets you). And the DSL is clear (the highest praise you can offer a DSL) and effort-saving (the second highest). I would start using it today if I could. (I might try to implement it.)
 
 == ActiveService::Base
 
@@ -34,8 +34,8 @@ I don't like `ActiveService`. It isn't (as Copeland says) "a radical change in h
 
 Two minor notes:
 
-1. It seems better than libraries like https://github.com/adomokos/light-service[light-service], https://github.com/dry-rb/dry-transaction[dry-transaction], or https://github.com/mindeavor/solid_use_case[solid_use_case], all of which only pretend to be OO.
-2. Dependency Injection has the ability to dramatically ease the testing of these services.
+1. It seems better than libraries like https://github.com/adomokos/light-service[light-service], https://github.com/dry-rb/dry-transaction[dry-transaction], or https://github.com/mindeavor/solid_use_case[solid_use_case], which all pretend to be OO.
+2. The proposed Dependency Injection has the ability to dramatically ease the testing of these services. It's a very good design choice.
 
 == Smart Database Defaults
 
@@ -47,14 +47,14 @@ The Active Record way claims that intelligence belongs in your models, not in th
 Validations such as `validates :foreign_key, uniqueness: true` are one way in which models can enforce data integrity. [...] Like anything which operates at the application level, these cannot guarantee referential integrity and so some people augment them with http://guides.rubyonrails.org/active_record_migrations.html#foreign-keys[foreign key constraints] in the database.
 ____
 
-This is an immature attitude towards database integrity features. Rails' users ostensibly select their databases for reasons, some of which relate to _features of that database_. (For example, I don't use MySQL when I can use PostgreSQL. I prefer having check constraints and lots of types to not. Also, Postgres' write-ahead log is miles better to deal with than the MySQL binlog, an abomination.) The guide even recognizes that *ActiveRecord can't guarantee uniqueness with validations*. I'll say that again: using `uniqueness: true` guarantees https://blog.acolyer.org/2015/09/04/feral-concurrency-control-an-empirical-investigation-of-modern-application-integrity[_nothing_ at high load.]
+This is an immature attitude towards database integrity features. Rails' users ostensibly select their databases for reasons, some of which relate to _features of that database_. (For example, I don't use MySQL when I can use PostgreSQL. I prefer having check constraints and lots of type. Also, Postgres' write-ahead log is miles better to deal with than the MySQL abominable binlog.) The guide even recognizes that *ActiveRecord can't guarantee uniqueness with validations*. I'll say that again: using `uniqueness: true` guarantees https://blog.acolyer.org/2015/09/04/feral-concurrency-control-an-empirical-investigation-of-modern-application-integrity[_nothing_ at high load.]
 
 Yet, Rails' defaults are to assume either:
 
 * You know enough about databases to write database integrity constraints yourself.
 * You don't ever get enough load to discover your persistence layer doesn't have your back.
 
-Which is bullshit. Copeland's proposals rectify this, giving Rails smart defaults around datastore integrity features. This isn't even a departure from Rails' philosophy, just a swapping of harmful opinions for helpful. I like all of them, but in particular would be thrilled if:
+That's bullshit. Copeland's proposals rectify this, giving Rails smart defaults around integrity. They aren't even a departure from Rails' philosophy, just a swapping of harmful opinions for helpful. I like all of them, but in particular would be thrilled if:
 
 * Columns were non-nullable default.
 * Foreign keys had constraints by default, assuming database support.
@@ -63,3 +63,7 @@ Which is bullshit. Copeland's proposals rectify this, giving Rails smart default
 == Unit Tests Wouldn't Hit the Database by Default
 
 This would be wonderful. I don't see how it would fit in with Rails' "Fuck business logic! Use callbacks!" attitude and the framework's inability to tell Application Logic from Business Logic. It'd be great if unit tests being entirely in-memory by default provided the push for developers to move business logic out of callbacks, but that shift is unlikely to take place without movement on this topic from David Heinemeier Hansson himself. I feel the attitude is propagated more by blogs & talks by Rails' users than by it's maintainers, and because the "callbacks are fine for business logic" is so 'baked in' to Rails developer culture, I don't see a push from anybody but Hansson himself changing the way we approach callbacks.
+
+== A Real Reaction
+
+I fervently hope that Copeland's post gets a conversation started about actual failings that Rails isn't addressing. I don't know if _these_ features will help Rails feel new and shiny again. Maybe so, maybe not. But they're more exciting than https://github.com/rails/rails/issues/18847[`ActiveRecord::Base.suppress`].
