@@ -5,34 +5,139 @@
   <id>http://blog.url.com/</id>
   <link href="http://blog.url.com/"/>
   <link href="http://blog.url.com/feed.xml" rel="self"/>
-  <updated>2016-05-19T16:31:00-04:00</updated>
+  <updated>2016-05-18T16:57:00-04:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
   <entry>
-    <title>Business Logic and Rails</title>
-    <link rel="alternate" href="http://blog.url.com/2016/05/19/business-logic-and-rails/"/>
-    <id>http://blog.url.com/2016/05/19/business-logic-and-rails/</id>
-    <published>2016-05-19T16:31:00-04:00</published>
-    <updated>2016-05-19T16:31:37-04:00</updated>
+    <title>Reaction to An Imagined Keynote</title>
+    <link rel="alternate" href="http://blog.url.com/2016/05/18/reaction-to-an-imagined-keynote/"/>
+    <id>http://blog.url.com/2016/05/18/reaction-to-an-imagined-keynote/</id>
+    <published>2016-05-18T16:57:00-04:00</published>
+    <updated>2016-05-22T01:19:09-04:00</updated>
     <author>
       <name>Article Author</name>
     </author>
-    <content type="html">&lt;div class="paragraph"&gt;
-&lt;p&gt;Now, the thing I have the most opinions about: Copeland&amp;#8217;s proposal for the structuring of Business Logic. I will say right away I think &lt;code&gt;ActiveService&lt;/code&gt; would be a good addition to Rails. MVC as a pattern (server-side MVC; client-side MVC is older and different) was never intended to structure Business Logic. The authors of the 2002 pattern &lt;a href="https://pyha.ru/forum/attachment/4429/"&gt;concluded by saying&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;h1&gt;Reaction to "An Imagined Keynote"&lt;/h1&gt;
+&lt;div id="preamble"&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;On Tuesday, David Copeland posted &lt;a href="http://naildrivin5.com/blog/2016/05/17/announcing-rails-6-an-imagined-roadmap.html"&gt;a script (with code samples)&lt;/a&gt; for a fictional future RailsConf Keynote reveal of Rails 6&amp;#8217;s "new features". (If you haven&amp;#8217;t yet, please read it; I&amp;#8217;m going to referencing without quoting extensively.) Copeland suggests that between a perceived lack of Rails 5 talk content at this year&amp;#8217;s RailsConf, and Justin Searls &lt;a href="http://blog.testdouble.com/posts/2016-05-09-make-ruby-great-again.html"&gt;worrying over Indeed.com job trends&lt;/a&gt; (it&amp;#8217;s towards the very end), Rails might need bold new features to win back mindshare. (A note on Searls' talk before we continue: out of context, one line chart proves the existence of line charts. I&amp;#8217;d like to see a more thorough analysis, including Rails' adoption &amp;amp; use data across both enterprise and startup sectors, before deciding the sky was failling.)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Whatever I think of his motives, Copeland proposed these features, and I think they&amp;#8217;re great. I want almost all &lt;em&gt;now&lt;/em&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="_front_end_2_0"&gt;Front-End 2.0&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;I don&amp;#8217;t do any front-end work (that isn&amp;#8217;t dataviz) these days, so I have no opinions on Copeland&amp;#8217;s proposals here. I&amp;#8217;d love to hear what designers &amp;amp; front-end developers think. I will mention&amp;#8201;&amp;#8212;&amp;#8201;this has nothing to do with Copeland&amp;#8201;&amp;#8212;&amp;#8201;the name 'OOCSS' bothers me. I&amp;#8217;ll let Sam Phippen say why, because I wouldn&amp;#8217;t do better:&lt;/p&gt;
+&lt;/div&gt;
+&lt;blockquote class="twitter-tweet" data-conversation="none" data-lang="en"&gt;&lt;p lang="en" dir="ltr"&gt;This all is to say: OO is about message passing. CSS doesn’t have messages, so I’ve always struggled to see how CSS can be OO.&lt;/p&gt;&amp;mdash; The Moment Seizes (@samphippen) &lt;a href="https://twitter.com/samphippen/status/731964847991205888"&gt;May 15, 2016&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src="//platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="_making_the_restful_7_special"&gt;Making the RESTful 7 Special&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Copeland&amp;#8217;s suggestion that defining &lt;code&gt;UsersController#index&lt;/code&gt; should make it a route (without needing any &lt;code&gt;config/routes.rb&lt;/code&gt; declarations) is compelling. The idea of adding more invisible magic to Rails concerns me, but I&amp;#8217;m very excited for it to be effortless to do "the right thing". I do worry about losing the "glanceability" of the routes file, but all of us working on monoliths lost that long ago.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="_actionresource"&gt;ActionResource&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;This would be &lt;strong&gt;so&lt;/strong&gt; useful. Facades (or Presenters or Decorators) absolutely have a place in the modern web application, but the best solution I&amp;#8217;ve found is using &lt;code&gt;SimpleDelegator&lt;/code&gt; for single objects and &lt;code&gt;Forwardable&lt;/code&gt; for composite facades. This is workable but not &lt;em&gt;good&lt;/em&gt;. &lt;code&gt;ActiveResource&lt;/code&gt; is. I like that aside from the proposed &lt;code&gt;from&lt;/code&gt;/&lt;code&gt;format&lt;/code&gt; DSL, you just write Ruby (which has always been Rails' greatest strength - when it gets out of the way and lets you). And the DSL is clear (the highest praise you can offer a DSL) and effort-saving (the second highest). I would start using it today if I could. (I might try to implement it.)&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="_activeservice_base"&gt;ActiveService::Base&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;I don&amp;#8217;t like &lt;code&gt;ActiveService&lt;/code&gt;. It isn&amp;#8217;t (as Copeland says) "a radical change in how Rails thinks about your application&amp;#8217;s architecture". First Controllers, then Models; now Services will be the ordained "containers of business logic". Copeland says this isn&amp;#8217;t "overly prescriptive", but it prescribes that everything sorts nicely into a small array of buckets. We need to discard the belief that there is no finite set (of reasonable, rememberable size) that includes all forms Business Logic can take. As a community, we need to stop searching for the magic pattern that provides an easy answer to the question "where does my business logic go?". There is no such pattern! It always depends on the domain you&amp;#8217;re modelling, and it always depends on the team. I &lt;em&gt;do&lt;/em&gt; agree with Copeland that it&amp;#8217;s a "good enough nudge", and I hope it will give the Rails community a new starting point for discussing where Business Logic belongs. For that alone, I celebrate the proposal.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Two minor notes:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="olist arabic"&gt;
+&lt;ol class="arabic"&gt;
+&lt;li&gt;
+&lt;p&gt;It seems better than libraries like &lt;a href="https://github.com/adomokos/light-service"&gt;light-service&lt;/a&gt;, &lt;a href="https://github.com/dry-rb/dry-transaction"&gt;dry-transaction&lt;/a&gt;, or &lt;a href="https://github.com/mindeavor/solid_use_case"&gt;solid_use_case&lt;/a&gt;, which all pretend to be OO.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The proposed Dependency Injection has the ability to dramatically ease the testing of these services. It&amp;#8217;s a very good design choice.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="_smart_database_defaults"&gt;Smart Database Defaults&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;OMFG yes. Rails' approach to database features has always puzzled me. From &lt;a href="http://guides.rubyonrails.org/active_record_migrations.html#active-record-and-referential-integrity"&gt;the Migrations Rails Guide&lt;/a&gt;:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="quoteblock"&gt;
 &lt;blockquote&gt;
 &lt;div class="paragraph"&gt;
-&lt;p&gt;We have not devoted a great deal of discussion to the business logic layer, because we consider it to be a normal OO program.&lt;/p&gt;
+&lt;p&gt;The Active Record way claims that intelligence belongs in your models, not in the database. As such, features such as triggers or constraints, which push some of that intelligence back into the database, are not heavily used.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Validations such as &lt;code&gt;validates :foreign_key, uniqueness: true&lt;/code&gt; are one way in which models can enforce data integrity. [&amp;#8230;&amp;#8203;] Like anything which operates at the application level, these cannot guarantee referential integrity and so some people augment them with &lt;a href="http://guides.rubyonrails.org/active_record_migrations.html#foreign-keys"&gt;foreign key constraints&lt;/a&gt; in the database.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/blockquote&gt;
 &lt;/div&gt;
 &lt;div class="paragraph"&gt;
-&lt;p&gt;It&amp;#8217;s always been a failing of Rails that the framework hasn&amp;#8217;t provided a good place to put Business Logic. It&amp;#8217;s always been a worse failing that it hasn&amp;#8217;t recognized this. Models aren&amp;#8217;t the right place. And this isn&amp;#8217;t about fidelity to the original pattern. I don&amp;#8217;t care whether Rails uses MVC or doesn&amp;#8217;t; but the pattern has a specific technical situation it&amp;#8217;s designed to be applied in. It has a specific set of strengths and weaknesses; it has a specific set of things it does help with and things it doesn&amp;#8217;t help with. It doesn&amp;#8217;t help with Business Logic. Rails believing it does has always been the framework&amp;#8217;s deepest flaw.&lt;/p&gt;
+&lt;p&gt;This is an immature attitude towards database integrity features. Rails' users ostensibly select their databases for reasons, some of which relate to &lt;em&gt;features of that database&lt;/em&gt;. (For example, I don&amp;#8217;t use MySQL when I can use PostgreSQL. I prefer having check constraints and lots of type. Also, Postgres' write-ahead log is miles better to deal with than the MySQL abominable binlog.) The guide even recognizes that &lt;strong&gt;ActiveRecord can&amp;#8217;t guarantee uniqueness with validations&lt;/strong&gt;. I&amp;#8217;ll say that again: using &lt;code&gt;uniqueness: true&lt;/code&gt; guarantees &lt;a href="https://blog.acolyer.org/2015/09/04/feral-concurrency-control-an-empirical-investigation-of-modern-application-integrity"&gt;&lt;em&gt;nothing&lt;/em&gt; at high load.&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="paragraph"&gt;
-&lt;p&gt;Back to the present, I wouldn&amp;#8217;t use &lt;code&gt;ActiveService::Base&lt;/code&gt; use to structure my Business Logic. Object domain models are best left organic and lumpy, clumping and grouping as they and the designer see fit. Having a overarching design plan in mind before you start modelling (and these services are a prefab design plan) just means you&amp;#8217;ll have to rip it out once you find something that &lt;em&gt;does&lt;/em&gt; fit. The fact that we&amp;#8217;re not mixing persistence logic in doesn&amp;#8217;t change that. But, if &lt;code&gt;ActiveService&lt;/code&gt; were to be included in Rails, I would be ecstatic, if only because it would allow us to have a concrete &lt;em&gt;thing&lt;/em&gt; around which to have badly needed OO design discussions as teams and as a community.&lt;/p&gt;
+&lt;p&gt;Yet, Rails' defaults are to assume either:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="ulist"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;You know enough about databases to write database integrity constraints yourself.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You don&amp;#8217;t ever get enough load to discover your persistence layer doesn&amp;#8217;t have your back.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;That&amp;#8217;s bullshit. Copeland&amp;#8217;s proposals rectify this, giving Rails smart defaults around integrity. They aren&amp;#8217;t even a departure from Rails' philosophy, just a swapping of harmful opinions for helpful. I like all of them, but in particular would be thrilled if:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="ulist"&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Columns were non-nullable default.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Foreign keys had constraints by default, assuming database support.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="_unit_tests_wouldn_t_hit_the_database_by_default"&gt;Unit Tests Wouldn&amp;#8217;t Hit the Database by Default&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;This would be wonderful. I don&amp;#8217;t see how it would fit in with Rails' "Fuck business logic! Use callbacks!" attitude and the framework&amp;#8217;s inability to tell Application Logic from Business Logic. It&amp;#8217;d be great if unit tests being entirely in-memory by default provided the push for developers to move business logic out of callbacks, but that shift is unlikely to take place without movement on this topic from David Heinemeier Hansson himself. I feel the attitude is propagated more by blogs &amp;amp; talks by Rails' users than by it&amp;#8217;s maintainers, and because the "callbacks are fine for business logic" is so 'baked in' to Rails developer culture, I don&amp;#8217;t see a push from anybody but Hansson himself changing the way we approach callbacks.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="sect1"&gt;
+&lt;h2 id="_a_real_reaction"&gt;A Real Reaction&lt;/h2&gt;
+&lt;div class="sectionbody"&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;I fervently hope that Copeland&amp;#8217;s post gets a conversation started about actual failings that Rails isn&amp;#8217;t addressing. I don&amp;#8217;t know if &lt;em&gt;these&lt;/em&gt; features will help Rails feel new and shiny again. Maybe so, maybe not. But they&amp;#8217;re more exciting than &lt;a href="https://github.com/rails/rails/issues/18847"&gt;&lt;code&gt;ActiveRecord::Base.suppress&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;</content>
   </entry>
 </feed>
