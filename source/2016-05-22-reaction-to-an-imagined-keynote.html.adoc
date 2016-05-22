@@ -1,6 +1,6 @@
 ---
 title: Reaction to "An Imagined Keynote"
-date: 2016-05-18 20:57 UTC
+date: 2016-05-22 21:50 UTC
 tags: rails
 ---
 
@@ -46,16 +46,18 @@ The Active Record way claims that intelligence belongs in your models, not in th
 Validations such as `validates :foreign_key, uniqueness: true` are one way in which models can enforce data integrity. [...] Like anything which operates at the application level, these cannot guarantee referential integrity and so some people augment them with http://guides.rubyonrails.org/active_record_migrations.html#foreign-keys[foreign key constraints] in the database.
 ____
 
-This is an immature attitude towards database integrity features. Rails' users ostensibly select their databases for reasons, some of which relate to _features of that database_. (For example, I don't use MySQL when I can use PostgreSQL. I prefer having check constraints and lots of type. Also, Postgres' write-ahead log is miles better to deal with than the MySQL abominable binlog.) The guide even recognizes that *ActiveRecord can't guarantee uniqueness with validations*. I'll say that again: using `uniqueness: true` guarantees https://blog.acolyer.org/2015/09/04/feral-concurrency-control-an-empirical-investigation-of-modern-application-integrity[_nothing_ at high load.]
+This is an immature attitude towards database integrity features. Rails' users ostensibly select their databases for reasons, some of which relate to _features of that database_. (For example, I don't use MySQL when I can use PostgreSQL. I prefer having check constraints and lots of column types. Also, Postgres' write-ahead log is miles better to deal with than MySQL's abominable binary log.) The guide even recognizes that *ActiveRecord can't guarantee uniqueness with validations*. I'll say that again: using `uniqueness: true` guarantees https://blog.acolyer.org/2015/09/04/feral-concurrency-control-an-empirical-investigation-of-modern-application-integrity[_nothing_ at high load.]
 
 Yet, Rails' defaults are to assume either:
 
 * You know enough about databases to write database integrity constraints yourself.
-* You don't ever get enough load to discover your persistence layer doesn't have your back.
+* You won't ever get enough load to discover your persistence layer doesn't have your back.
 
-That's bullshit. Copeland's proposals rectify this, giving Rails smart defaults around integrity. They aren't even a departure from Rails' philosophy, just a swapping of harmful opinions for helpful. I like all of them, but in particular would be thrilled if:
+That's bullshit.
 
-* Columns were non-nullable default.
+Copeland's proposals rectify this, giving Rails smart defaults around integrity. They aren't even a departure from Rails' philosophy, just a swapping of harmful opinions for helpful. I like all of them, but in particular would be thrilled if:
+
+* Columns were non-nullable by default.
 * Foreign keys had constraints by default, assuming database support.
 
 
