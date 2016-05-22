@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://blog.url.com/2016/05/18/reaction-to-an-imagined-keynote/"/>
     <id>http://blog.url.com/2016/05/18/reaction-to-an-imagined-keynote/</id>
     <published>2016-05-18T16:57:00-04:00</published>
-    <updated>2016-05-22T02:00:50-04:00</updated>
+    <updated>2016-05-22T02:01:25-04:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -93,7 +93,7 @@
 &lt;/blockquote&gt;
 &lt;/div&gt;
 &lt;div class="paragraph"&gt;
-&lt;p&gt;This is an immature attitude towards database integrity features. Rails' users ostensibly select their databases for reasons, some of which relate to &lt;em&gt;features of that database&lt;/em&gt;. (For example, I don&amp;#8217;t use MySQL when I can use PostgreSQL. I prefer having check constraints and lots of column types. Also, Postgres' write-ahead log is miles better to deal with than the MySQL abominable binlog.) The guide even recognizes that &lt;strong&gt;ActiveRecord can&amp;#8217;t guarantee uniqueness with validations&lt;/strong&gt;. I&amp;#8217;ll say that again: using &lt;code&gt;uniqueness: true&lt;/code&gt; guarantees &lt;a href="https://blog.acolyer.org/2015/09/04/feral-concurrency-control-an-empirical-investigation-of-modern-application-integrity"&gt;&lt;em&gt;nothing&lt;/em&gt; at high load.&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;This is an immature attitude towards database integrity features. Rails' users ostensibly select their databases for reasons, some of which relate to &lt;em&gt;features of that database&lt;/em&gt;. (For example, I don&amp;#8217;t use MySQL when I can use PostgreSQL. I prefer having check constraints and lots of column types. Also, Postgres' write-ahead log is miles better to deal with than MySQL&amp;#8217;s abominable binlog.) The guide even recognizes that &lt;strong&gt;ActiveRecord can&amp;#8217;t guarantee uniqueness with validations&lt;/strong&gt;. I&amp;#8217;ll say that again: using &lt;code&gt;uniqueness: true&lt;/code&gt; guarantees &lt;a href="https://blog.acolyer.org/2015/09/04/feral-concurrency-control-an-empirical-investigation-of-modern-application-integrity"&gt;&lt;em&gt;nothing&lt;/em&gt; at high load.&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="paragraph"&gt;
 &lt;p&gt;Yet, Rails' defaults are to assume either:&lt;/p&gt;

@@ -90,7 +90,7 @@
 </blockquote>
 </div>
 <div class="paragraph">
-<p>This is an immature attitude towards database integrity features. Rails' users ostensibly select their databases for reasons, some of which relate to <em>features of that database</em>. (For example, I don&#8217;t use MySQL when I can use PostgreSQL. I prefer having check constraints and lots of column types. Also, Postgres' write-ahead log is miles better to deal with than the MySQL abominable binlog.) The guide even recognizes that <strong>ActiveRecord can&#8217;t guarantee uniqueness with validations</strong>. I&#8217;ll say that again: using <code>uniqueness: true</code> guarantees <a href="https://blog.acolyer.org/2015/09/04/feral-concurrency-control-an-empirical-investigation-of-modern-application-integrity"><em>nothing</em> at high load.</a></p>
+<p>This is an immature attitude towards database integrity features. Rails' users ostensibly select their databases for reasons, some of which relate to <em>features of that database</em>. (For example, I don&#8217;t use MySQL when I can use PostgreSQL. I prefer having check constraints and lots of column types. Also, Postgres' write-ahead log is miles better to deal with than MySQL&#8217;s abominable binlog.) The guide even recognizes that <strong>ActiveRecord can&#8217;t guarantee uniqueness with validations</strong>. I&#8217;ll say that again: using <code>uniqueness: true</code> guarantees <a href="https://blog.acolyer.org/2015/09/04/feral-concurrency-control-an-empirical-investigation-of-modern-application-integrity"><em>nothing</em> at high load.</a></p>
 </div>
 <div class="paragraph">
 <p>Yet, Rails' defaults are to assume either:</p>
