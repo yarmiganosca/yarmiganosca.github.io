@@ -10,11 +10,11 @@
     <name>Blog Author</name>
   </author>
   <entry>
-    <title>Reaction to An Imagined Keynote</title>
+    <title>Reaction to "An Imagined Keynote"</title>
     <link rel="alternate" href="http://blog.url.com/2016/05/18/reaction-to-an-imagined-keynote/"/>
     <id>http://blog.url.com/2016/05/18/reaction-to-an-imagined-keynote/</id>
     <published>2016-05-18T16:57:00-04:00</published>
-    <updated>2016-05-22T01:19:09-04:00</updated>
+    <updated>2016-05-22T01:40:34-04:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -22,7 +22,7 @@
 &lt;div id="preamble"&gt;
 &lt;div class="sectionbody"&gt;
 &lt;div class="paragraph"&gt;
-&lt;p&gt;On Tuesday, David Copeland posted &lt;a href="http://naildrivin5.com/blog/2016/05/17/announcing-rails-6-an-imagined-roadmap.html"&gt;a script (with code samples)&lt;/a&gt; for a fictional future RailsConf Keynote reveal of Rails 6&amp;#8217;s "new features". (If you haven&amp;#8217;t yet, please read it; I&amp;#8217;m going to referencing without quoting extensively.) Copeland suggests that between a perceived lack of Rails 5 talk content at this year&amp;#8217;s RailsConf, and Justin Searls &lt;a href="http://blog.testdouble.com/posts/2016-05-09-make-ruby-great-again.html"&gt;worrying over Indeed.com job trends&lt;/a&gt; (it&amp;#8217;s towards the very end), Rails might need bold new features to win back mindshare. (A note on Searls' talk before we continue: out of context, one line chart proves the existence of line charts. I&amp;#8217;d like to see a more thorough analysis, including Rails' adoption &amp;amp; use data across both enterprise and startup sectors, before deciding the sky was failling.)&lt;/p&gt;
+&lt;p&gt;On Tuesday, David Copeland posted &lt;a href="http://naildrivin5.com/blog/2016/05/17/announcing-rails-6-an-imagined-roadmap.html"&gt;a script (with code samples)&lt;/a&gt; for a fictional future RailsConf Keynote reveal of Rails 6&amp;#8217;s "new features". (If you haven&amp;#8217;t yet, please read it; I&amp;#8217;m going to reference it without quoting extensively.) Copeland suggests that between a perceived lack of Rails 5 talk content at this year&amp;#8217;s RailsConf, and Justin Searls &lt;a href="http://blog.testdouble.com/posts/2016-05-09-make-ruby-great-again.html"&gt;worrying over Indeed.com job trends&lt;/a&gt; (it&amp;#8217;s towards the very end), Rails might need bold new features to win back mindshare. (A note on Searls' talk before we continue: out of context, one line chart proves the existence of line charts. I&amp;#8217;d like to see a more thorough analysis, including Rails' adoption &amp;amp; use data across both enterprise and startup sectors, before deciding the sky was failling.)&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="paragraph"&gt;
 &lt;p&gt;Whatever I think of his motives, Copeland proposed these features, and I think they&amp;#8217;re great. I want almost all &lt;em&gt;now&lt;/em&gt;.&lt;/p&gt;
