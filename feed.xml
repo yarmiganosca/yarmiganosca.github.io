@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://blog.url.com/2016/05/18/reaction-to-an-imagined-keynote/"/>
     <id>http://blog.url.com/2016/05/18/reaction-to-an-imagined-keynote/</id>
     <published>2016-05-18T16:57:00-04:00</published>
-    <updated>2016-05-22T02:02:02-04:00</updated>
+    <updated>2016-05-22T02:03:09-04:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -109,7 +109,10 @@
 &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class="paragraph"&gt;
-&lt;p&gt;That&amp;#8217;s bullshit. Copeland&amp;#8217;s proposals rectify this, giving Rails smart defaults around integrity. They aren&amp;#8217;t even a departure from Rails' philosophy, just a swapping of harmful opinions for helpful. I like all of them, but in particular would be thrilled if:&lt;/p&gt;
+&lt;p&gt;That&amp;#8217;s bullshit.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Copeland&amp;#8217;s proposals rectify this, giving Rails smart defaults around integrity. They aren&amp;#8217;t even a departure from Rails' philosophy, just a swapping of harmful opinions for helpful. I like all of them, but in particular would be thrilled if:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class="ulist"&gt;
 &lt;ul&gt;
