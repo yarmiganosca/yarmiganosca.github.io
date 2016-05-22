@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Blog Name</title>
+  <subtitle>Blog subtitle</subtitle>
+  <id>http://blog.url.com/</id>
+  <link href="http://blog.url.com/"/>
+  <link href="http://blog.url.com/feed.xml" rel="self"/>
+  <updated>2016-05-19T16:31:00-04:00</updated>
+  <author>
+    <name>Blog Author</name>
+  </author>
+  <entry>
+    <title>Business Logic and Rails</title>
+    <link rel="alternate" href="http://blog.url.com/2016/05/19/business-logic-and-rails/"/>
+    <id>http://blog.url.com/2016/05/19/business-logic-and-rails/</id>
+    <published>2016-05-19T16:31:00-04:00</published>
+    <updated>2016-05-19T16:31:37-04:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;div class="paragraph"&gt;
+&lt;p&gt;Now, the thing I have the most opinions about: Copeland&amp;#8217;s proposal for the structuring of Business Logic. I will say right away I think &lt;code&gt;ActiveService&lt;/code&gt; would be a good addition to Rails. MVC as a pattern (server-side MVC; client-side MVC is older and different) was never intended to structure Business Logic. The authors of the 2002 pattern &lt;a href="https://pyha.ru/forum/attachment/4429/"&gt;concluded by saying&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="quoteblock"&gt;
+&lt;blockquote&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;We have not devoted a great deal of discussion to the business logic layer, because we consider it to be a normal OO program.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;It&amp;#8217;s always been a failing of Rails that the framework hasn&amp;#8217;t provided a good place to put Business Logic. It&amp;#8217;s always been a worse failing that it hasn&amp;#8217;t recognized this. Models aren&amp;#8217;t the right place. And this isn&amp;#8217;t about fidelity to the original pattern. I don&amp;#8217;t care whether Rails uses MVC or doesn&amp;#8217;t; but the pattern has a specific technical situation it&amp;#8217;s designed to be applied in. It has a specific set of strengths and weaknesses; it has a specific set of things it does help with and things it doesn&amp;#8217;t help with. It doesn&amp;#8217;t help with Business Logic. Rails believing it does has always been the framework&amp;#8217;s deepest flaw.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="paragraph"&gt;
+&lt;p&gt;Back to the present, I wouldn&amp;#8217;t use &lt;code&gt;ActiveService::Base&lt;/code&gt; use to structure my Business Logic. Object domain models are best left organic and lumpy, clumping and grouping as they and the designer see fit. Having a overarching design plan in mind before you start modelling (and these services are a prefab design plan) just means you&amp;#8217;ll have to rip it out once you find something that &lt;em&gt;does&lt;/em&gt; fit. The fact that we&amp;#8217;re not mixing persistence logic in doesn&amp;#8217;t change that. But, if &lt;code&gt;ActiveService&lt;/code&gt; were to be included in Rails, I would be ecstatic, if only because it would allow us to have a concrete &lt;em&gt;thing&lt;/em&gt; around which to have badly needed OO design discussions as teams and as a community.&lt;/p&gt;
+&lt;/div&gt;</content>
+  </entry>
+</feed>
