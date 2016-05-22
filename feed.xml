@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://blog.url.com/2016/05/18/reaction-to-an-imagined-keynote/"/>
     <id>http://blog.url.com/2016/05/18/reaction-to-an-imagined-keynote/</id>
     <published>2016-05-18T16:57:00-04:00</published>
-    <updated>2016-05-22T02:04:07-04:00</updated>
+    <updated>2016-05-22T02:04:54-04:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -117,7 +117,7 @@
 &lt;div class="ulist"&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Columns were non-nullable default.&lt;/p&gt;
+&lt;p&gt;Columns were non-nullable by default.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;Foreign keys had constraints by default, assuming database support.&lt;/p&gt;
