@@ -5,6 +5,8 @@
     margin-bottom: 6em;
 }
 
+header { border-bottom: 4px black solid; }
+
 footer { border-top: 4px black solid; }
 footer div { float: left; }
 
@@ -25,6 +27,8 @@ footer .tags ol { padding-left: 0; }
 footer .years ol { padding-left: 0; }
 
 footer li { list-style-type: none; }
+
+a.continue-reading { display: block; }
 
 .recent-articles span.date {
     display: inline-block;
