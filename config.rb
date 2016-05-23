@@ -31,6 +31,10 @@ activate :blog do |blog|
   # blog.page_link = "page/{num}"
 end
 
+activate :drafts do |drafts|
+  drafts.build = !!ENV['DRAFTS']
+end
+
 page "/feed.xml", layout: false
 
 set :markdown_engine, :redcarpet
