@@ -1,6 +1,6 @@
 ---
 title: Reaction to "An Imagined Keynote"
-date: 2016-05-22 21:50 UTC
+date: 2016-05-22 19:50 UTC
 tags: rails
 ---
 
